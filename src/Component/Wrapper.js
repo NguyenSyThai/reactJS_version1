@@ -39,6 +39,10 @@ class Com_1 extends Component {
 		console.log(this.refs.content.getstate());
 	}
 
+	onSubmit = (data) => {
+		console.log(data);
+	}
+
 	render() {
 		//let name = this.state.name;
 		//let price = this.state.price;
@@ -51,7 +55,7 @@ class Com_1 extends Component {
 				<input type="button" value="call" onClick={() => this.callContent()}/>
 				<Header />
 				<Right />
-				<Content ref="content" name={name} price={price}/>
+				<Content ref="content" name={name} price={price} onSubmit={this.onSubmit}/>
 				<Left />
 				<Footer />
 				</div>	
