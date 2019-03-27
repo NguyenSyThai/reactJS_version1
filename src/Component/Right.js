@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Right_column extends Component {
 	render() {
 		return (
-			<h1>Right Column</h1>
+			<div className="right_column">Right Column</div>
 		);
 	}
 }
